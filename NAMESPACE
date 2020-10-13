@@ -2,3 +2,4 @@
 
 export(comorbidities_symptoms)
 export(liver_plot)
+importFrom(magrittr,"%>%")

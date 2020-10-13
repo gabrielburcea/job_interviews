@@ -1,0 +1,29 @@
+---
+title: "test_functions"
+author: "Gabriel Burcea"
+date: "13/10/2020"
+output: word_document
+---
+
+Read data
+
+```{r}
+fake_data <- read_csv("/Users/gabrielburcea/rprojects/job_interviews/data/fake_data.csv")
+```
+
+Plot the data 
+
+```{r}
+plot <- cvindia::liver_plot(data = fake_data, start_date = as.Date("2020-04-2020"), end_date = as.Date("2020-09-01"), plot_chart = TRUE)
+
+plot
+```
+
+
+Get only the numbers
+```{r}
+numbers <- cvindia::liver_plot(data = fake_data, start_date = as.Date("2020-04-2020"), end_date = as.Date("2020-09-01"), plot_chart = FALSE)
+
+numbers
+```
+
